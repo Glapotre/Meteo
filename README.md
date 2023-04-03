@@ -3,40 +3,21 @@
 
 
 
-Dans votre application météo, vous pouvez obtenir les détails météorologiques d'une ville spécifique en entrant le nom de la ville ou vous pouvez également obtenir les détails météorologiques d'un emplacement actuel en cliquant sur une ville de la carte interactive. Si vous avez entré un nom de ville invalide, un message d'erreur s'affichera.
-Vous obtiendrez de nombreuses informations météorologiques détaillées dans cette application, telles que la température en degrés Celsius, les conditions météorologiques, l'emplacement, la sensation et l'humidité.
 
-Cependant, le portage mobile, présente des risques technique :
-
-compatibilité des appareils
-
-→ problématique
-L'application doit s'adapter aux différentes versions du système d'exploitation Android, au risque de ne pouvoir marcher, et créer une frustration chez l'utilisateur.
-→ solution
-l'application doit détecter la version d'Android de l'utilisateur, et lui proposer une version adapté
-
-
-connexion à internet
-
-→ problématique
-l'utilisateur n'a pas forcément accès à internet, ou dispose d'un forfait limité
-→ solution
-téléchargement de fichier, via des zone de wi-fi libre permettant de consulter hors ligne l'application
-
-
-
-
+WebGL est une implémentation d’OpenGL en javascript permettant de lire et d’afficher de la 3D dans les navigateurs sans aucun plugin.
+Plus précisément, c’est une API qui permet au site web de communiquer avec les cartes graphiques des utilisateurs et d’afficher des éléments 3D. Dorénavant, les principaux navigateurs internet supportent nativement le WebGL (Chrome, Firefox, Safari, IE11 etc.).
+cependant, cette technologie représente des risques technique
 
 
 
 la lisibilité de l'application
 → problématique
-Dans un contexte de mobilité, l'utilisateur souhaite aller à l'essentiel, et ne pas être noyé dans l'information.
+L'utilisateur souhaite aller à l'essentiel, et ne pas être noyé dans l'information.
 → solution
 
 créer des menu avec peut d'option
 créer des vues permettant de s'informer en un seul regard
-optimiser le chargement du scroll
+optimiser le chargement des assets
 
 temps de chargement
 → problématique
@@ -52,3 +33,15 @@ accès à l'information
 la recherche d'information en navigant sur les pages et les menus  de l'application risque de lasser l'utilisateur 
 → solution
 créer une barre de recherche permettant de fournir des informations pertinentes à l'utilisateur
+
+
+
+maintenabilité du code
+
+→ problématique
+
+la mise à jour de l'application peut entraîner des conflits entre les modules, et empêcher l'application de fonctionner
+
+→ solution
+
+tester les briques de code, effectuer des veilles technologique de mise à jour
